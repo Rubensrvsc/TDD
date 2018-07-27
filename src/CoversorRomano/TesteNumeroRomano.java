@@ -44,4 +44,10 @@ public class TesteNumeroRomano {
 		assertEquals(result,4);
 		
 	}
+	@Test
+	public void testaIgualdadeEntreDoisNumerosRomanos(){
+		NumeroRomano nr=new NumeroRomano("V","V");
+		int result= nr.somaDoisNumeros();
+		assertEquals(result,4);
+	}
 }

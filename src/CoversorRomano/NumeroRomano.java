@@ -37,8 +37,10 @@ public class NumeroRomano {
 	public int somaDoisNumeros(){
 		int num1=this.converte(getNumeros().get(0));
 		int num2=this.converte(getNumeros().get(1));
-		if(num1<=num2){
+		if(num1<num2){
 			return num2-num1;
+		}if(num1==num2){
+			return num2+num1;
 		}else{
 			return 0;
 		}
