@@ -6,7 +6,8 @@ public class TestePrincipal {
 		// TODO Auto-generated method stub
 		
 		TesteNumeroRomano tn=new TesteNumeroRomano();
-		tn.TestaNumeroIRomano();
+		tn.testaNumeroIRomano();
+		tn.testaSomaDoisNumerosRomanos();
 
 	}
 

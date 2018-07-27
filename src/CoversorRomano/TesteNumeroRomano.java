@@ -7,30 +7,41 @@ import org.junit.Test;
 import junit.framework.*;
 public class TesteNumeroRomano {
 	@Test
-	public void TestaNumeroIRomano(){
+	public void testaNumeroIRomano(){
 		NumeroRomano nr=new NumeroRomano("I");
-		int result=nr.converte();
+		String numero=nr.getNumeros().get(0);
+		int result=nr.converte(numero);
 		assertEquals(result,1);
 	}
 	
 	@Test
-	public void TestaNumeroVRomano(){
+	public void testaNumeroVRomano(){
 		NumeroRomano nr=new NumeroRomano("V");
-		int result=nr.converte();
+		String numero=nr.getNumeros().get(0);
+		int result=nr.converte(numero);
 		assertEquals(result,5);
 	}
 	
 	@Test
-	public void TestaNumeroXRomano(){
+	public void testaNumeroXRomano(){
 		NumeroRomano nr=new NumeroRomano("X");
-		int result=nr.converte();
+		String numero=nr.getNumeros().get(0);
+		int result=nr.converte(numero);
 		assertEquals(result,10);
 	}
 	
 	@Test
-	public void TestaNumeroLRomano(){
+	public void testaNumeroLRomano(){
 		NumeroRomano nr=new NumeroRomano("L");
-		int result=nr.converte();
+		String numero=nr.getNumeros().get(0);
+		int result=nr.converte(numero);
 		assertEquals(result,50);
+	}
+	@Test
+	public void testaSomaDoisNumerosRomanos(){
+		NumeroRomano nr=new NumeroRomano("I","V");
+		int result= nr.somaDoisNumeros();
+		assertEquals(result,4);
+		
 	}
 }
