@@ -7,7 +7,7 @@ public class TestePrincipal {
 		
 		TesteNumeroRomano tn=new TesteNumeroRomano();
 		tn.testaNumeroIRomano();
-		tn.testaSomaDoisNumerosRomanos();
+		tn.testaSubtracaoDoisNumerosRomanos();
 
 	}
 

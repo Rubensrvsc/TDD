@@ -34,11 +34,13 @@ public class NumeroRomano {
 		}
 	}
 
-	public int somaDoisNumeros(){
+	public int operacoesDoisNumeros(){
 		int num1=this.converte(getNumeros().get(0));
 		int num2=this.converte(getNumeros().get(1));
 		if(num1<num2){
 			return num2-num1;
+		}if(num1>num2){
+			return num1-num2;
 		}if(num1==num2){
 			return num2+num1;
 		}else{
@@ -46,4 +48,7 @@ public class NumeroRomano {
 		}
 	}
 	
+	public void adicionarNovoAlgarismo(String numero){
+		numeros.add(numero);
+	}
 }

@@ -38,16 +38,22 @@ public class TesteNumeroRomano {
 		assertEquals(result,50);
 	}
 	@Test
-	public void testaSomaDoisNumerosRomanos(){
+	public void testaSubtracaoDoisNumerosRomanos(){
 		NumeroRomano nr=new NumeroRomano("I","V");
-		int result= nr.somaDoisNumeros();
+		int result= nr.operacoesDoisNumeros();
 		assertEquals(result,4);
 		
 	}
 	@Test
+	public void testaSomaDoisNumerosRomanos(){
+		NumeroRomano nr=new NumeroRomano("X","I");
+		int result= nr.operacoesDoisNumeros();
+		assertEquals(result,11);
+	}
+	@Test
 	public void testaIgualdadeEntreDoisNumerosRomanos(){
-		NumeroRomano nr=new NumeroRomano("V","V");
-		int result= nr.somaDoisNumeros();
-		assertEquals(result,4);
+		NumeroRomano nr=new NumeroRomano("X","X");
+		int result= nr.operacoesDoisNumeros();
+		assertEquals(result,20);
 	}
 }
